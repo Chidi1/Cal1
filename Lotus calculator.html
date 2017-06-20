@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+<html>
+<head>
+<title>Lotus Calculator</title>
+<link rel="stylesheet" href="lbacalculator.css" type="text/css">
+</head>
+<body>
+<h2 style="color:blue"></h3>
+<div class="calc">
+<marquee>Lotus Calculator by Chidi</marquee>
+<input type="text" id="display" value="" readonly><br>
+<input type="button" class="first op" value="1" onclick="display.value+='1'">
+<input type="button" class="first op" value="2" onclick="display.value+='2'">
+<input type="button" class="first op" value="3" onclick="display.value+='3'">
+<input type="button" class="first op" value="4" onclick="display.value+='4'"><br>
+<input type="button" class="second op" value="5" onclick="display.value+='5'">
+<input type="button" class="second op" value="6" onclick="display.value+='6'">
+<input type="button" class="second op" value="7" onclick="display.value+='7'">
+<input type="button" class="second op" value="8" onclick="display.value+='8'"><br>
+<input type="button" class="third op" value="9" onclick="display.value+='9'">
+<input type="button" class="third op" value="0" onclick="display.value+='0'">
+<input type="button" class="third op" value="+" onclick="display.value+='+'">
+<input type="button" class="third op" value="-" onclick="display.value+='-'"><br>
+<input type="button" class="fourt op" value="*" onclick="display.value+='*'">
+<input type="button" class="fourt op" value="/" onclick="display.value+='/'">
+<input type="button" class="fourt op" value="=" onclick="display.value= eval(display.value)">
+<input type="button" class="fourt op" value="C" onclick="display.value=''">
+
+</div>
+</body>
+</html>
