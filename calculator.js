@@ -1,69 +1,74 @@
-function num1(){
-display.value+='1';
+var calc = angular.module('calc', []);
+
+ calc.controller('calculatorangjs',function ($scope) {
+	$scope.display = '';
+	
+$scope.num1 = function (){
+$scope.display += '1';
 }
 
-function num2(){
-display.value+='2';
+$scope.num2 = function (){
+$scope.display +='2';
 }
 
-function num3(){
-display.value+='3';
+$scope.num3 = function (){
+$scope.display +='3';
 }
 
-function num4(){
-display.value+='4';
+$scope.num4 = function (){
+$scope.display +='4';
 }
 
-function num5(){
-display.value+='5';
+$scope.num5 = function (){
+$scope.display +='5';
 }
 
-function num6(){
-display.value+='6';
+$scope.num6 = function (){
+$scope.display +='6';
 }
 
-function num7(){
-display.value+='7';
+$scope.num7 = function (){
+$scope.display +='7';
 }
 
-function num8(){
-display.value+='8';
+$scope.num8 = function (){
+$scope.display +='8';
 }
 
-function num9(){
-display.value+='9';
+$scope.num9 = function (){
+$scope.display +='9';
 }
 
-function num0(){
-display.value+='0';
+$scope.num0 = function (){
+$scope.display +='0';
 }
 
-function add(){
-display.value+='+';
+$scope.add = function (){
+$scope.display +='+';
 }
 
-function sub(){
-display.value+='-';
+$scope.sub = function (){
+$scope.display +='-';
 }
 
-function div(){
-display.value+='/';
+$scope.div = function (){
+$scope.display +='/';
 }
 
-function mult(){
-display.value+='*';
+$scope.mult = function (){
+$scope.display +='*';
 }
 
-function eguals() {
-display.value= eval(display.value);
+$scope.eguals = function () {
+$scope.display = eval($scope.display);
 }
 
-function clean() {
-display.value='';
+$scope.clean = function () {
+$scope.display ='';
 }
 
-function dot(){
-display.value+='.';
+$scope.dot = function (){
+$scope.display +='.';
 }
 
 
@@ -75,15 +80,53 @@ document.calc.answer.value = result;
 }
 }*/
 
-function doMath(){
-eval(display.value = Math.sqrt(display.value));
+$scope.doMath = function (){
+$scope.display = eval(Math.sqrt($scope.display));
+}
+
+$scope.sqr = function () {
+	$scope.display = Math.pow($scope.display,2);
+}
+
+/*
+$scope.sqr = function (){
+$scope.display.value=Math.pow(display.value,2);
+}
+*/
+$scope.onex = function (){
+$scope.display =1/$scope.display;
+}
+ 
+});
+
+
+
+
+
+/** 
+This can shorten my code and display any number that has been declared. The second one is for equals.
+Function fxnname(val) {
+	documet.getElementById("display").value += (val);
+	
+}
+
+function  equals() {
+	try 
+	{
+		c(val(document.getElementById("display").value))
+	}
+	catche(e)
+	{
+		c('error')
+	}
 }
 
 
-function sqr(){
-display.value=Math.pow(display.value,2);
-}
 
-function onex(){
-display.value=1/display.value;
+to clear 
+function c(val)
+document.getElementById("display").value =val;
+
 }
+*/ 
+
